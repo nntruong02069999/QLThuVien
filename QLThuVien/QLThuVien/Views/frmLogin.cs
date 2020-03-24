@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
-namespace QLThuVien
+namespace QLThuVien.Views
 {
-    public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class frmLogin : DevExpress.XtraEditors.XtraForm
     {
-        public frmMain()
+        public frmLogin()
         {
             InitializeComponent();
         }
