@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using QLThuVien.Views;
+using DevExpress.XtraTab;
 
 namespace QLThuVien
 {
@@ -16,6 +17,41 @@ namespace QLThuVien
         public frmMain()
         {
             InitializeComponent();
+        }
+
+        internal static List<byte> typePages = new List<byte>();
+        public void AddTabPages(XtraUserControl uct, byte typeControl, string tenTab)
+        {
+            for (int i = 0; i < tabDisplay.TabPages.Count; i++)
+            {
+                if (tabDisplay.TabPages[i].Contains(uct))
+                {
+                    tabDisplay.SelectedTabPage = tabDisplay.TabPages[i];
+                    return;
+                }
+            }
+            XtraTabPage tab = new XtraTabPage();
+            typePages.Add(typeControl);
+            tab.Name = uct.Name;
+            tab.Size = tabDisplay.Size;
+            tab.Text = tenTab;
+            tabDisplay.TabPages.Add(tab);
+            tabDisplay.SelectedTabPage = tab;
+            uct.Dock = DockStyle.Fill;
+            tab.Controls.Add(uct);
+            uct.Focus();
+        }
+
+        public void DongTabHienTai()
+        {
+            tabDisplay.TabPages.Remove(tabDisplay.SelectedTabPage);
+        }
+        public void DongTatCaTab()
+        {
+            while (tabDisplay.TabPages.Count > 0)
+            {
+                DongTabHienTai();
+            }
         }
 
         public void skins()
@@ -40,7 +76,7 @@ namespace QLThuVien
 
         private void btnChangePas_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            AddTabPages(ucChangePass.utcChangePass, 4, "Đổi mật khẩu");
         }
 
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

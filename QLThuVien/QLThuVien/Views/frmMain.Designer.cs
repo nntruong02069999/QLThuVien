@@ -57,18 +57,17 @@
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rbStatus = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.tabHienThi = new DevExpress.XtraTab.XtraTabPage();
+            this.tabDisplay = new DevExpress.XtraTab.XtraTabControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
-            this.xtraTabControl1.SuspendLayout();
-            this.tabHienThi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabDisplay)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
             // 
+            this.ribbonControl1.ExpandCollapseItem.AllowDrawArrow = false;
+            this.ribbonControl1.ExpandCollapseItem.AllowDrawArrowInMenu = false;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonControl1.Images = this.imageList1;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -96,7 +95,6 @@
             this.ribbonPage1,
             this.ribbonPage2});
             this.ribbonControl1.Size = new System.Drawing.Size(895, 158);
-            this.ribbonControl1.StatusBar = this.rbStatus;
             // 
             // imageList1
             // 
@@ -332,50 +330,30 @@
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.Text = "Thống kê";
             // 
-            // rbStatus
+            // tabDisplay
             // 
-            this.rbStatus.Location = new System.Drawing.Point(0, 370);
-            this.rbStatus.Name = "rbStatus";
-            this.rbStatus.Ribbon = this.ribbonControl1;
-            this.rbStatus.Size = new System.Drawing.Size(893, 27);
-            // 
-            // xtraTabControl1
-            // 
-            this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabControl1.Location = new System.Drawing.Point(0, 158);
-            this.xtraTabControl1.Name = "xtraTabControl1";
-            this.xtraTabControl1.SelectedTabPage = this.tabHienThi;
-            this.xtraTabControl1.Size = new System.Drawing.Size(895, 422);
-            this.xtraTabControl1.TabIndex = 1;
-            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.tabHienThi});
-            // 
-            // tabHienThi
-            // 
-            this.tabHienThi.Controls.Add(this.rbStatus);
-            this.tabHienThi.Name = "tabHienThi";
-            this.tabHienThi.Size = new System.Drawing.Size(893, 397);
-            this.tabHienThi.Text = "xtraTabPage1";
+            this.tabDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabDisplay.Location = new System.Drawing.Point(0, 158);
+            this.tabDisplay.Name = "tabDisplay";
+            this.tabDisplay.Size = new System.Drawing.Size(895, 422);
+            this.tabDisplay.TabIndex = 1;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(895, 580);
-            this.Controls.Add(this.xtraTabControl1);
+            this.Controls.Add(this.tabDisplay);
             this.Controls.Add(this.ribbonControl1);
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmMain.IconOptions.SvgImage")));
             this.Name = "frmMain";
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.StatusBar = this.rbStatus;
             this.Text = "QUẢN LÝ THƯ VIỆN";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
-            this.xtraTabControl1.ResumeLayout(false);
-            this.tabHienThi.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabDisplay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,9 +364,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private DevExpress.XtraBars.Ribbon.RibbonStatusBar rbStatus;
-        private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
-        private DevExpress.XtraTab.XtraTabPage tabHienThi;
+        private DevExpress.XtraTab.XtraTabControl tabDisplay;
         private DevExpress.XtraBars.BarButtonItem btnDangXuat;
         private DevExpress.XtraBars.BarButtonItem btnChangePas;
         private DevExpress.XtraBars.BarButtonItem btnQuanLiSach;

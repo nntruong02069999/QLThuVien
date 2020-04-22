@@ -73,6 +73,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ucChangePass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucChangePass.Designer.cs">
+      <DependentUpon>ucChangePass.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Views\frmDangKi.resx">
       <DependentUpon>frmDangKi.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +99,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\ucChangePass.resx">
+      <DependentUpon>ucChangePass.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
