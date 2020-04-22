@@ -126,6 +126,7 @@
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
             // 
             // btnChangePas
             // 
@@ -135,6 +136,7 @@
             this.btnChangePas.Name = "btnChangePas";
             this.btnChangePas.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnChangePas.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnChangePas_ItemClick);
             // 
             // btnQuanLiSach
             // 

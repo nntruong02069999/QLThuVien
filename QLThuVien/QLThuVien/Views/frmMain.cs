@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using QLThuVien.Views;
 
 namespace QLThuVien
 {
@@ -34,6 +35,22 @@ namespace QLThuVien
             if(dr == DialogResult.No)
             {
                 e.Cancel = true;
+            }
+        }
+
+        private void btnChangePas_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DialogResult dialog = XtraMessageBox.Show("Bạn có muốn đăng xuất ? ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                Hide();
+                frmLogin form = new frmLogin();
+                form.Show();
             }
         }
     }
