@@ -89,5 +89,10 @@ namespace QLThuVien
                 form.Show();
             }
         }
+
+        private void btnQuanLiSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AddTabPages(Views.HeThong.QuanLySach.utcQuanLySach, 4, "Quản lý sách");
+        }
     }
 }

@@ -54,9 +54,9 @@
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.tbNewPass);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Location = new System.Drawing.Point(172, 31);
+            this.groupControl1.Location = new System.Drawing.Point(363, 67);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(513, 342);
+            this.groupControl1.Size = new System.Drawing.Size(567, 388);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thay đổi mật khẩu";
             // 
@@ -64,7 +64,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Sitka Heading", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(63, 51);
+            this.labelControl1.Location = new System.Drawing.Point(86, 74);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(120, 28);
             this.labelControl1.TabIndex = 11;
@@ -72,7 +72,7 @@
             // 
             // tbNewPass
             // 
-            this.tbNewPass.Location = new System.Drawing.Point(287, 126);
+            this.tbNewPass.Location = new System.Drawing.Point(310, 149);
             this.tbNewPass.Name = "tbNewPass";
             this.tbNewPass.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNewPass.Properties.Appearance.Options.UseFont = true;
@@ -84,7 +84,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Sitka Heading", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(67, 124);
+            this.labelControl2.Location = new System.Drawing.Point(90, 147);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(135, 28);
             this.labelControl2.TabIndex = 9;
@@ -92,7 +92,7 @@
             // 
             // tbConfirmPass
             // 
-            this.tbConfirmPass.Location = new System.Drawing.Point(287, 194);
+            this.tbConfirmPass.Location = new System.Drawing.Point(310, 217);
             this.tbConfirmPass.Name = "tbConfirmPass";
             this.tbConfirmPass.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbConfirmPass.Properties.Appearance.Options.UseFont = true;
@@ -104,7 +104,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Sitka Heading", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(67, 192);
+            this.labelControl3.Location = new System.Drawing.Point(90, 215);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(179, 28);
             this.labelControl3.TabIndex = 12;
@@ -116,7 +116,7 @@
             this.btCancel.Appearance.Options.UseFont = true;
             this.btCancel.AutoSize = true;
             this.btCancel.Cursor = System.Windows.Forms.Cursors.PanWest;
-            this.btCancel.Location = new System.Drawing.Point(302, 266);
+            this.btCancel.Location = new System.Drawing.Point(325, 289);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(71, 33);
             this.btCancel.TabIndex = 15;
@@ -128,7 +128,7 @@
             this.btOk.Appearance.Options.UseFont = true;
             this.btOk.AutoSize = true;
             this.btOk.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.btOk.Location = new System.Drawing.Point(155, 266);
+            this.btOk.Location = new System.Drawing.Point(178, 289);
             this.btOk.Name = "btOk";
             this.btOk.Size = new System.Drawing.Size(94, 33);
             this.btOk.TabIndex = 14;
@@ -137,7 +137,7 @@
             // 
             // tbOldPass
             // 
-            this.tbOldPass.Location = new System.Drawing.Point(287, 53);
+            this.tbOldPass.Location = new System.Drawing.Point(310, 76);
             this.tbOldPass.Name = "tbOldPass";
             this.tbOldPass.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbOldPass.Properties.Appearance.Options.UseFont = true;
@@ -151,7 +151,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupControl1);
             this.Name = "ucChangePass";
-            this.Size = new System.Drawing.Size(851, 501);
+            this.Size = new System.Drawing.Size(1058, 558);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();

@@ -144,6 +144,7 @@
             this.btnQuanLiSach.Name = "btnQuanLiSach";
             this.btnQuanLiSach.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnQuanLiSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuanLiSach_ItemClick);
             // 
             // btnQuanLiTheLoai
             // 
@@ -245,6 +246,7 @@
             this.btnDocGiaDangMuon.Caption = "Độc giả đang mượn";
             this.btnDocGiaDangMuon.Id = 15;
             this.btnDocGiaDangMuon.ImageOptions.ImageIndex = 2;
+            this.btnDocGiaDangMuon.ImageOptions.SvgImageSize = new System.Drawing.Size(5, 5);
             this.btnDocGiaDangMuon.Name = "btnDocGiaDangMuon";
             this.btnDocGiaDangMuon.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
@@ -350,6 +352,7 @@
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ THƯ VIỆN";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
