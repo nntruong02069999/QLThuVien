@@ -113,8 +113,9 @@
             this.btLuu.Location = new System.Drawing.Point(215, 375);
             this.btLuu.Name = "btLuu";
             this.btLuu.Size = new System.Drawing.Size(121, 40);
-            this.btLuu.TabIndex = 13;
+            this.btLuu.TabIndex = 7;
             this.btLuu.Text = "Lưu";
+            this.btLuu.Click += new System.EventHandler(this.btLuu_Click);
             // 
             // tbMaSach
             // 
@@ -123,7 +124,7 @@
             this.tbMaSach.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMaSach.Properties.Appearance.Options.UseFont = true;
             this.tbMaSach.Size = new System.Drawing.Size(178, 28);
-            this.tbMaSach.TabIndex = 14;
+            this.tbMaSach.TabIndex = 1;
             // 
             // tbTenSach
             // 
@@ -132,7 +133,7 @@
             this.tbTenSach.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTenSach.Properties.Appearance.Options.UseFont = true;
             this.tbTenSach.Size = new System.Drawing.Size(178, 28);
-            this.tbTenSach.TabIndex = 14;
+            this.tbTenSach.TabIndex = 2;
             // 
             // tbNamXuatBan
             // 
@@ -141,37 +142,41 @@
             this.tbNamXuatBan.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNamXuatBan.Properties.Appearance.Options.UseFont = true;
             this.tbNamXuatBan.Size = new System.Drawing.Size(178, 28);
-            this.tbNamXuatBan.TabIndex = 14;
+            this.tbNamXuatBan.TabIndex = 3;
             // 
             // cbTacGia
             // 
+            this.cbTacGia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTacGia.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTacGia.FormattingEnabled = true;
             this.cbTacGia.Location = new System.Drawing.Point(292, 186);
             this.cbTacGia.Name = "cbTacGia";
             this.cbTacGia.Size = new System.Drawing.Size(178, 25);
-            this.cbTacGia.TabIndex = 15;
+            this.cbTacGia.TabIndex = 4;
             // 
             // cbTheLoai
             // 
+            this.cbTheLoai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTheLoai.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTheLoai.FormattingEnabled = true;
             this.cbTheLoai.Location = new System.Drawing.Point(292, 247);
             this.cbTheLoai.Name = "cbTheLoai";
             this.cbTheLoai.Size = new System.Drawing.Size(178, 25);
-            this.cbTheLoai.TabIndex = 15;
+            this.cbTheLoai.TabIndex = 5;
             // 
             // cbNhaXuatBan
             // 
+            this.cbNhaXuatBan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNhaXuatBan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbNhaXuatBan.FormattingEnabled = true;
             this.cbNhaXuatBan.Location = new System.Drawing.Point(292, 309);
             this.cbNhaXuatBan.Name = "cbNhaXuatBan";
             this.cbNhaXuatBan.Size = new System.Drawing.Size(178, 25);
-            this.cbNhaXuatBan.TabIndex = 15;
+            this.cbNhaXuatBan.TabIndex = 6;
             // 
             // NewIteamQuanLySach
             // 
+            this.AcceptButton = this.btLuu;
             this.Appearance.BackColor = System.Drawing.Color.Azure;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

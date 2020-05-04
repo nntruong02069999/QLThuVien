@@ -10,6 +10,7 @@ using DevExpress.XtraEditors;
 using QLThuVien.Views;
 using DevExpress.XtraTab;
 
+
 namespace QLThuVien
 {
     public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -93,6 +94,31 @@ namespace QLThuVien
         private void btnQuanLiSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             AddTabPages(Views.HeThong.QuanLySach.utcQuanLySach, 4, "Quản lý sách");
+        }
+
+        private void btnQuanLiTheLoai_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AddTabPages(Views.HeThong.QuanLyTheLoai.utcQuanLyTheLoai, 4, "Quản lý thể loại");
+        }
+
+        private void btnQuanLiNXB_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AddTabPages(Views.HeThong.QuanLyNXB.utcQuanLyNXB, 4, "Quản lý nhà xuất bản");
+        }
+
+        private void btnListSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AddTabPages(Views.HeThong.QuanLyTacGia.utcQuanLyTacGia, 4, "Quản lý tác giả");
+        }
+
+        private void btnQuanLiNhanVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AddTabPages(Views.HeThong.QuanLyNhanVien.utcQuanLyNhanVien, 4, "Quản lý nhân viên");
+        }
+
+        private void btnMuonSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AddTabPages(Views.ChucNang.QuanLy.QuanLyMuonSach.utcQuanLyMuonSach, 4, "Quản lý mượn sách");
         }
     }
 }

@@ -53,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Database.cs" />
+    <Compile Include="Views\ChucNang\QuanLy\QuanLyMuonSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ChucNang\QuanLy\QuanLyMuonSach.Designer.cs">
+      <DependentUpon>QuanLyMuonSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmDangKi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,11 +79,113 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\HeThong\AddItemQuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\AddItemQuanLyNhanVien.Designer.cs">
+      <DependentUpon>AddItemQuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\AddItemQuanLyNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\AddItemQuanLyNXB.Designer.cs">
+      <DependentUpon>AddItemQuanLyNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\AddItemQuanLyTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\AddItemQuanLyTacGia.Designer.cs">
+      <DependentUpon>AddItemQuanLyTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\AddItemQuanLyTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\AddItemQuanLyTheLoai.Designer.cs">
+      <DependentUpon>AddItemQuanLyTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\ChangeItemQuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\ChangeItemQuanLyNhanVien.Designer.cs">
+      <DependentUpon>ChangeItemQuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\ChangeItemQuanLyNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\ChangeItemQuanLyNXB.Designer.cs">
+      <DependentUpon>ChangeItemQuanLyNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\ChangeItemQuanLySach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\ChangeItemQuanLySach.Designer.cs">
+      <DependentUpon>ChangeItemQuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\ChangeItemQuanLyTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\ChangeItemQuanLyTacGia.Designer.cs">
+      <DependentUpon>ChangeItemQuanLyTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\ChangeQuanLyTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\ChangeQuanLyTheLoai.Designer.cs">
+      <DependentUpon>ChangeQuanLyTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\ChangingItemQuanLySach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\ChangingItemQuanLySach.Designer.cs">
+      <DependentUpon>ChangingItemQuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\DeleteQuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\DeleteQuanLyNhanVien.Designer.cs">
+      <DependentUpon>DeleteQuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\DeleteQuanLyNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\DeleteQuanLyNXB.Designer.cs">
+      <DependentUpon>DeleteQuanLyNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\DeleteQuanLySach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\DeleteQuanLySach.Designer.cs">
+      <DependentUpon>DeleteQuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\DeleteQuanLyTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\DeleteQuanLyTacGia.Designer.cs">
+      <DependentUpon>DeleteQuanLyTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\DeleteQuanLyTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\DeleteQuanLyTheLoai.Designer.cs">
+      <DependentUpon>DeleteQuanLyTheLoai.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\HeThong\NewIteamQuanLySach.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\HeThong\NewIteamQuanLySach.Designer.cs">
       <DependentUpon>NewIteamQuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\QuanLyNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\QuanLyNhanVien.Designer.cs">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\QuanLyNXB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\QuanLyNXB.Designer.cs">
+      <DependentUpon>QuanLyNXB.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\HeThong\QuanLySach.cs">
       <SubType>UserControl</SubType>
@@ -85,12 +193,27 @@
     <Compile Include="Views\HeThong\QuanLySach.Designer.cs">
       <DependentUpon>QuanLySach.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\HeThong\QuanLyTacGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\QuanLyTacGia.Designer.cs">
+      <DependentUpon>QuanLyTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\QuanLyTheLoai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\QuanLyTheLoai.Designer.cs">
+      <DependentUpon>QuanLyTheLoai.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ucChangePass.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\ucChangePass.Designer.cs">
       <DependentUpon>ucChangePass.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\ChucNang\QuanLy\QuanLyMuonSach.resx">
+      <DependentUpon>QuanLyMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmDangKi.resx">
       <DependentUpon>frmDangKi.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,11 +234,68 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\HeThong\AddItemQuanLyNhanVien.resx">
+      <DependentUpon>AddItemQuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\AddItemQuanLyNXB.resx">
+      <DependentUpon>AddItemQuanLyNXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\AddItemQuanLyTacGia.resx">
+      <DependentUpon>AddItemQuanLyTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\AddItemQuanLyTheLoai.resx">
+      <DependentUpon>AddItemQuanLyTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\ChangeItemQuanLyNhanVien.resx">
+      <DependentUpon>ChangeItemQuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\ChangeItemQuanLyNXB.resx">
+      <DependentUpon>ChangeItemQuanLyNXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\ChangeItemQuanLySach.resx">
+      <DependentUpon>ChangeItemQuanLySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\ChangeItemQuanLyTacGia.resx">
+      <DependentUpon>ChangeItemQuanLyTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\ChangeQuanLyTheLoai.resx">
+      <DependentUpon>ChangeQuanLyTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\ChangingItemQuanLySach.resx">
+      <DependentUpon>ChangingItemQuanLySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\DeleteQuanLyNhanVien.resx">
+      <DependentUpon>DeleteQuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\DeleteQuanLyNXB.resx">
+      <DependentUpon>DeleteQuanLyNXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\DeleteQuanLySach.resx">
+      <DependentUpon>DeleteQuanLySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\DeleteQuanLyTacGia.resx">
+      <DependentUpon>DeleteQuanLyTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\DeleteQuanLyTheLoai.resx">
+      <DependentUpon>DeleteQuanLyTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\HeThong\NewIteamQuanLySach.resx">
       <DependentUpon>NewIteamQuanLySach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\QuanLyNhanVien.resx">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\QuanLyNXB.resx">
+      <DependentUpon>QuanLyNXB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\HeThong\QuanLySach.resx">
       <DependentUpon>QuanLySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\QuanLyTacGia.resx">
+      <DependentUpon>QuanLyTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\QuanLyTheLoai.resx">
+      <DependentUpon>QuanLyTheLoai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ucChangePass.resx">
       <DependentUpon>ucChangePass.cs</DependentUpon>
@@ -131,14 +311,108 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\ChucNang\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\publicfix_32x32.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\convert_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocustomer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocustomer_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_lock.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\web_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\web_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bopermission_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bopermission_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullstackedbar_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullstackedbar_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boresume_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boresume_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boposition2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boposition2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editcontact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editcontact_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boperson_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boperson_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morefunctions_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morefunctions_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recentlyuse_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recentlyuse_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compatibility_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compatibility_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_16x16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

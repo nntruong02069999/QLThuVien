@@ -119,11 +119,10 @@
             // 
             this.btOk.Appearance.Font = new System.Drawing.Font("Sitka Small", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btOk.Appearance.Options.UseFont = true;
-            this.btOk.AutoSize = true;
             this.btOk.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.btOk.Location = new System.Drawing.Point(227, 301);
+            this.btOk.Location = new System.Drawing.Point(223, 301);
             this.btOk.Name = "btOk";
-            this.btOk.Size = new System.Drawing.Size(35, 33);
+            this.btOk.Size = new System.Drawing.Size(84, 33);
             this.btOk.TabIndex = 1;
             this.btOk.Text = "OK";
             this.btOk.Click += new System.EventHandler(this.btOk_Click);
@@ -134,7 +133,7 @@
             this.btCancel.Appearance.Options.UseFont = true;
             this.btCancel.AutoSize = true;
             this.btCancel.Cursor = System.Windows.Forms.Cursors.PanWest;
-            this.btCancel.Location = new System.Drawing.Point(356, 301);
+            this.btCancel.Location = new System.Drawing.Point(368, 301);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(71, 33);
             this.btCancel.TabIndex = 2;
@@ -143,6 +142,7 @@
             // 
             // frmLogin
             // 
+            this.AcceptButton = this.btOk;
             this.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
