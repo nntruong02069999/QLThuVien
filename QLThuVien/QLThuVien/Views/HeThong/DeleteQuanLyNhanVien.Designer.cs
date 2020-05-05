@@ -37,12 +37,13 @@
             // 
             // tbTenNhanVien
             // 
-            this.tbTenNhanVien.Location = new System.Drawing.Point(92, 152);
+            this.tbTenNhanVien.Location = new System.Drawing.Point(107, 187);
+            this.tbTenNhanVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbTenNhanVien.Name = "tbTenNhanVien";
             this.tbTenNhanVien.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTenNhanVien.Properties.Appearance.Options.UseFont = true;
             this.tbTenNhanVien.Properties.ReadOnly = true;
-            this.tbTenNhanVien.Size = new System.Drawing.Size(178, 28);
+            this.tbTenNhanVien.Size = new System.Drawing.Size(208, 34);
             this.tbTenNhanVien.TabIndex = 24;
             // 
             // cbMaNhanVien
@@ -50,10 +51,11 @@
             this.cbMaNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMaNhanVien.FormattingEnabled = true;
-            this.cbMaNhanVien.ItemHeight = 22;
-            this.cbMaNhanVien.Location = new System.Drawing.Point(92, 88);
+            this.cbMaNhanVien.ItemHeight = 26;
+            this.cbMaNhanVien.Location = new System.Drawing.Point(107, 108);
+            this.cbMaNhanVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbMaNhanVien.Name = "cbMaNhanVien";
-            this.cbMaNhanVien.Size = new System.Drawing.Size(178, 30);
+            this.cbMaNhanVien.Size = new System.Drawing.Size(207, 34);
             this.cbMaNhanVien.TabIndex = 23;
             this.cbMaNhanVien.SelectedIndexChanged += new System.EventHandler(this.cbMaNhanVien_SelectedIndexChanged);
             // 
@@ -61,9 +63,10 @@
             // 
             this.btXoa.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btXoa.Appearance.Options.UseFont = true;
-            this.btXoa.Location = new System.Drawing.Point(129, 219);
+            this.btXoa.Location = new System.Drawing.Point(150, 270);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(113, 41);
+            this.btXoa.Size = new System.Drawing.Size(132, 50);
             this.btXoa.TabIndex = 22;
             this.btXoa.Text = "Xóa";
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
@@ -72,9 +75,10 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(112, 34);
+            this.labelControl1.Location = new System.Drawing.Point(131, 42);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(130, 25);
+            this.labelControl1.Size = new System.Drawing.Size(166, 31);
             this.labelControl1.TabIndex = 21;
             this.labelControl1.Text = "Nhân viên :  ";
             // 
@@ -82,13 +86,14 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(181)))), ((int)(((byte)(254)))));
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 294);
+            this.ClientSize = new System.Drawing.Size(422, 362);
             this.Controls.Add(this.tbTenNhanVien);
             this.Controls.Add(this.cbMaNhanVien);
             this.Controls.Add(this.btXoa);
             this.Controls.Add(this.labelControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "DeleteQuanLyNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Xóa nhân viên";
