@@ -46,7 +46,7 @@
             this.btLuu.Size = new System.Drawing.Size(121, 40);
             this.btLuu.TabIndex = 13;
             this.btLuu.Text = "Lưu";
-            this.btLuu.Click += new System.EventHandler(this.btLuu_Click);
+            this.btLuu.Click += new System.EventHandler(this.BtLuu_Click);
             // 
             // tbTenNXB
             // 
