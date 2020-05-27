@@ -31,10 +31,27 @@ namespace QLThuVien.Views.HeThong
 
         private void QuanLySach_Load(object sender, EventArgs e)
         {
+            QuanLySach_Loading();
+        }
+        public void QuanLySach_Loading ()
+        {
             DataTable dt = new DataTable();
-            string query = "Select * from DauSach";
+            string query = "Select MaSach as [Mã sách], TenSach as [Tên sách], NamXuatBan as [Năm xuất bản], " +
+                "MaTacGia as [Mã tác giả], MaTheLoai as [Mã thể loại], MaNXB as [Mã NXB] from DauSach";
             db.readDatathroughAdapter(query, dt);
             dgvQuanLySach.DataSource = dt;
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            ChangeItemQuanLySach addItem = new ChangeItemQuanLySach();
+            addItem.Show();
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            DeleteQuanLySach addItem = new DeleteQuanLySach();
+            addItem.Show();
         }
     }
 }

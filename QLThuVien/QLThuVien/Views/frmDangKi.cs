@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using QLThuVien.Models;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace QLThuVien.Views
 {
