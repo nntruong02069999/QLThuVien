@@ -29,14 +29,14 @@ namespace QLThuVien.Views.ChucNang.QuanLy
             string nhanVienTao = cbNhanVienTao.Text;
             DateTime ngayTao = dtpNgayTao.Value;
             DateTime ngayHetHan = dtpNgayHetHan.Value;
-            if (string.IsNullOrWhiteSpace(soThe) || string.IsNullOrWhiteSpace(tenDocGia)
+            if(string.IsNullOrWhiteSpace(soThe) || string.IsNullOrWhiteSpace(tenDocGia) 
                 || string.IsNullOrWhiteSpace(diaChi) || string.IsNullOrWhiteSpace(sdt) ||
-                string.IsNullOrWhiteSpace(nhanVienTao))
+                string.IsNullOrWhiteSpace(nhanVienTao) )
             {
                 XtraMessageBox.Show("Không được phép để trống thông tin độc giả !!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (DateTime.Compare(ngayTao, ngayHetHan) >= 1)
+            if(DateTime.Compare(ngayTao,ngayHetHan) >= 1)
             {
                 XtraMessageBox.Show("Ngày hết hạn không thể có giá trị thấp hơn ngày khởi tạo !!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -44,7 +44,7 @@ namespace QLThuVien.Views.ChucNang.QuanLy
             string queryCheck = "Select * from TheThuVien where ID_The = N'" + soThe + "'";
             DataTable data = new DataTable();
             db.readDatathroughAdapter(queryCheck, data);
-            if (data.Rows.Count > 0)
+            if(data.Rows.Count > 0)
             {
                 XtraMessageBox.Show("Số thẻ đã tồn tại !!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

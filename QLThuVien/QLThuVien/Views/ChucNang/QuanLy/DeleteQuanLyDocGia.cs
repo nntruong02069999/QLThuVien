@@ -49,7 +49,7 @@ namespace QLThuVien.Views.ChucNang.QuanLy
         private void btXoa_Click(object sender, EventArgs e)
         {
             string soThe = cbNhanVienTao.Text;
-            if (string.IsNullOrWhiteSpace(soThe))
+            if(string.IsNullOrWhiteSpace(soThe))
             {
                 XtraMessageBox.Show("Hãy chọn độc giả muốn xóa !!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -63,14 +63,13 @@ namespace QLThuVien.Views.ChucNang.QuanLy
                     string queryDeleteDocGia = "Delete from DocGia where SoThe = N'" + soThe + "'";
                     SqlCommand sql1 = new SqlCommand(queryDeleteTTV);
                     SqlCommand sql2 = new SqlCommand(queryDeleteDocGia);
-
+                    
                     db.executeQuery(sql2);
                     db.executeQuery(sql1);
                     XtraMessageBox.Show("Thành công .", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     QuanLyDocGia.utcQuanLyDocGia.QuanLyDocGiaLoading();
                     this.Hide();
-                }
-                catch (Exception err)
+                } catch (Exception err)
                 {
                     XtraMessageBox.Show("Độc giả không được phép xóa !!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }

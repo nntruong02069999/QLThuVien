@@ -31,7 +31,7 @@ namespace QLThuVien.Views.ChucNang.QuanLy
             string query = "Select * from TheThuVien";
             DataTable dataTable = new DataTable();
             db.readDatathroughAdapter(query, dataTable);
-            for (int i = 0; i < dataTable.Rows.Count; i++)
+            for(int i = 0; i < dataTable.Rows.Count; i ++)
             {
                 cbNhanVienTao.Items.Add(dataTable.Rows[i].Field<string>("ID_The"));
             }
@@ -51,7 +51,7 @@ namespace QLThuVien.Views.ChucNang.QuanLy
             db.readDatathroughAdapter(query, dataTable);
             tbDiaChi.Text = dataTable.Rows[0].Field<string>("DiaChi");
             tbTenDocGia.Text = dataTable.Rows[0].Field<string>("TenDocGia");
-            tbSDT.Text = dataTable.Rows[0].Field<string>("SDT");
+            tbSDT.Text =  dataTable.Rows[0].Field<string>("SDT");
             dtpNgayHetHan.Value = (DateTime)dataTable.Rows[0].Field<DateTime>("NgayHetHan");
 
 
@@ -64,7 +64,7 @@ namespace QLThuVien.Views.ChucNang.QuanLy
             string diaChi = tbDiaChi.Text;
             string sdt = tbSDT.Text;
             DateTime ngayHetHan = dtpNgayHetHan.Value;
-            if (string.IsNullOrWhiteSpace(tenDocGia))
+            if(string.IsNullOrWhiteSpace(tenDocGia))
             {
                 XtraMessageBox.Show("Hãy chọn độc giả muốn sửa !!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
